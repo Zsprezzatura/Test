@@ -1,0 +1,36 @@
+ .demoTable{
+ 	margin-top: 20px;
+ 	margin-left: 20px;
+ }
+ .layui-ll{
+ 	margin-left: 40px;
+ }
+ .layui-xx{
+ 	    border-left: 5px solid #78909c;
+
+ }
+ .layui-ljtj{
+ 	width: 300px;
+ 	margin: 0 auto;
+ }
+ .topbar{
+ 	margin-left: 50%;
+ }
+ .layui-layer-dialog .qrcode {
+ 	width: 300px;
+ 	height: 500px;
+ }
+ .gustframe{
+ 	width: 100px;
+ }
+ .Qrtitle{
+ 	display: block;
+ 	width: 70px;
+ 	margin:0 auto;
+ 	font-size: larger;
+ 	font-weight: 600;
+ }
+ .tableSize{
+	height: 100%;
+	width: 100%;
+ }

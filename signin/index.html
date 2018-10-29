@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>人力资源研讨会</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./layui/layui.js" charset="utf-8"></script>
+  <script src="./js/config.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <!-- <script type="text/javascript" src="./mock.js"></script> -->
+</head>
+<body>
+  
+  <form class="layui-form"  id="layerForm" style="display:none; padding:15px;">
+    <blockquote class="layui-elem-quote layui-xx">基本信息</blockquote>
+                                        <!-- 使用index.css中的样式 -->
+    <div class="layui-ll"><!--使用index.css中的样式-->
+      <!-- 添加姓名 -->
+      <div class="layui-form-item">
+          <label class="layui-form-label">姓名</label>
+          <div class="layui-input-inline my-inline">
+              <input type="text" name="name" lay-verify="required" autocomplete="off" placeholder="*必填" class="layui-input"  id="name001">
+          </div>
+      </div>
+      <!-- 添加公司名称 -->    
+      <div class="layui-form-item">
+          <label class="layui-form-label">公司名称</label>
+          <div class="layui-input-inline my-inline">
+              <input type="text" name="company" lay-verify="required" placeholder="*必填" autocomplete="off" class="layui-input" id="company001">
+          </div>
+      </div>
+      <!-- 添加职位 -->
+      <div class="layui-form-item">
+          <label class="layui-form-label">职位</label>
+          <div class="layui-input-inline my-inline">
+            <input type="text" name="position"  placeholder="" autocomplete="off" class="layui-input" id="position001">
+          </div>
+      </div>
+         
+      <!-- 添加电话 -->
+      <div class="layui-form-item">
+          <label class="layui-form-label">电话</label>
+          <div class="layui-input-inline my-inline">
+              <input type="text" name="phone" lay-verify="required" placeholder="*必填"   autocomplete="off"  class="layui-input" id="phone001">
+          </div>
+      </div>
+      <!-- 添加邮箱 -->
+      <div class="layui-form-item">
+          <label class="layui-form-label">邮箱</label>
+          <div class="layui-input-inline my-inline">
+              <input type="text" name="email" lay-verify="foundTime"  autocomplete="off" placeholder="" class="layui-input" id="email001">
+          </div>
+      </div>
+      <!-- 添加入场类型 -->
+      <div class="layui-form-item">
+        <div class="layui-inline">
+          <label class="layui-form-label">嘉宾类型</label>
+          <div class="layui-input-inline">
+            <select name="type" id="type001">
+              <option value="参会嘉宾" selected="">参会嘉宾</option>
+              <option value="演讲嘉宾">演讲嘉宾</option>
+            </select>
+          </div>
+        </div>
+      </div>  
+      <!-- 添加活动明细 -->
+    </div>
+
+    <!--灰色分割线-->
+    <hr class="layui-bg-gray" style="margin-top: 40px;margin-bottom: 20px;color:#78909c ">
+
+    <div class="layui-form-item text-center" >
+        <div class="layui-input-block">
+          <div class="layui-ljtj"><!--使用index.css中的样式-->
+            <span class="layui-btn" id="Tsubmit" style="background-color: #455a64" lay-filter="demo1">立即提交</span>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+          </div>
+        </div>
+    </div>
+  </form>
+      
+  
+  <div class="demoTable" id="layerDemo" style="margin-bottom: 0;">
+      <button id= "J-add" class="layui-btn" style="background-color: #455a64"  data-type="reload">添加</button>
+      <span class="topbar">姓名/公司名称</span>
+      <div class="layui-inline">
+        <input class="layui-input" name="keyword" id="demoReload" autocomplete="off"/>
+      </div>
+      <button class="layui-btn" style="background-color: #78909c" data-type="reload">搜索</button>
+      
+  </div>
+  <table class="layui-table tableSize" id="LAY_table_user" lay-filter="user"></table>
+  <script type="text/html" id="imgQR" >
+      <span lay-event="lookQR">查看二维码</span>
+  </script>
+  <!-- <script type="text/html" id="barDemo">  
+    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon" lay-event="edit"></i></button>
+    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon" lay-event="del"></i></button>
+    <button class="layui-btn layui-btn-primary layui-btn-sm" lay-event="detail">查看</button>
+  </script>
+ -->  
+  <script type="text/html" id="guest">
+    {{#  if(d.type === '演讲嘉宾'){ }}
+      <span style="color: #49b7ff;">{{ d.type }}</span>
+      {{#  } else { }}
+      {{ d.type }}
+    {{#  } }}
+  </script>
+
+  
+</body>
+</html>
