@@ -1,0 +1,11 @@
+.layui-btn,.layui-laypage .layui-laypage-curr .layui-laypage-em{
+	background-color: #53615f;
+}
+.layui-btn-primary{
+	color: #ffffff;
+}
+.layui-xx{
+	font-weight: bold;
+	font-size: 20px; 
+	border-left: 5px solid #78909c;
+}

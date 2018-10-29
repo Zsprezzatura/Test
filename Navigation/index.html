@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CSS、JS实例——导航栏固定</title>
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<title>Wings</title>
+	<link rel="stylesheet" type="text/css" href="./src/css/index.css">
+	<link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<div class="header">
 		<div class="description">
-			<h1>CSS、JS实例汇总——导航栏设置</h1>
-			<p class="remark">导航栏滚动一定高度后固定在顶部</p>
+			<h1>HTML、CSS、JS实例汇总</h1>
+			<p class="remark">静态布局、导航栏固定、轮播、进度条设置、高德地图实例</p>
 		</div>
 	</div>
 	<div id="navi">
@@ -23,7 +24,21 @@
 			<li class="item">
 				<a href="https://www.imooc.com/" target="_blank">慕课网</a></li>
 			<li class="item">
-				<a href="https://lbs.amap.com/dev/index" target="_blank">高德API</a></li>
+				<a href="https://lbs.amap.com/dev/index" target="_blank">高德API</a>
+				<div class="item-content">
+					<a href="#">选项一</a>
+				    <a href="#">选项二</a>
+				    <a href="#">选项三</a>	 
+				</div>
+			</li>
+			<li class="item">
+				<a href="#" target="">数据</a>
+				<div class="item-content">
+					<a href="https://www.layui.com/" target="_blank">LAYUI</a>
+				    <a href="data-table.html" target="_blank">TABLE</a>
+				    <a href="progress.html" target="_blank">进度条</a>	 
+				</div>
+			</li>
 		</ul>
 	</div>
 	<div id="content">
@@ -32,32 +47,32 @@
 			<div class="Choices-banner">
 				<ul>
 			    	<li>
-			        	<div class="Choices_left"><img src="./images/Choices1.jpg"></div>
-			            <div class="Choices_right">
+			        	<div class="Choices-left"><img src="./src/images/Choices1.jpg"></div>
+			            <div class="Choices-right">
 			            	<h2>见山是山，见水是水</h2>
 			                <p>啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊啊啊啊啊啊啊啊啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈</p>
-			                <div class="ChoicesBtn"><span>开始修炼</span></div>
+			                <div class="Choices-Btn"><span>开始修炼</span></div>
 			            </div>
 			        </li>
 			        <li>
-			        	<div class="Choices_left"><img src="./images/Choices2.jpg"></div>
-			            <div class="Choices_right">
+			        	<div class="Choices-left"><img src="./src/images/Choices2.jpg"></div>
+			            <div class="Choices-right">
 			            	<h2>山不是山，水不是水</h2>
 			                <p>嘿哟哟哟哟哟哟哟嘿嘿嘿嘿哟哟哟哟哟哟哟嘿嘿嘿嘿哟哟哟哟哟哟哟嘿嘿嘿嘿哟哟哟哟哟哟哟嘿嘿嘿嘿哟哟哟哟哟哟哟嘿嘿嘿</p>
-			                <div class="ChoicesBtn"><span>开始修炼</span></div>
+			                <div class="Choices-Btn"><span>开始修炼</span></div>
 			            </div>
 			        </li>
 			        <li>
-			        	<div class="Choices_left"><img src="./images/Choices3.jpg"></div>
-			            <div class="Choices_right">
+			        	<div class="Choices-left"><img src="./src/images/Choices3.jpg"></div>
+			            <div class="Choices-right">
 			            	<h2>侠者，以武犯禁</h2>
 			                <p>呀呀呀呀呀哦哦呀呀哦哦哦哦哦哦哦哦哦哦哦呀呀呀呀呀呀呀呀哦哦呀呀哦哦哦哦哦哦哦哦哦哦哦呀呀呀呀呀呀呀呀哦哦呀呀哦哦哦哦哦哦哦哦哦哦哦呀呀呀</p>
-			                <div class="ChoicesBtn"><span>开始修炼</span></div>
+			                <div class="Choices-Btn"><span>开始修炼</span></div>
 			            </div>
 			        </li>
 			    </ul>
 			</div>
-			<div class="Choicestel">
+			<div class="Choices-tel">
 				<ul>
 			    	<li><01/03></li>
 			        <li><02/03></li>
@@ -69,6 +84,6 @@
 	<div id="more"></div>
 	<div id="footer"><span class="foot-txt">江湖到此回头</span></div>
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
-	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./src/js/main.js"></script>
 </body>
 </html>
