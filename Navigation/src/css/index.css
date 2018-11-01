@@ -135,7 +135,7 @@ ul li{
 }
 .Choices-head:before, .Choices-head:after{
 	content: ''; 
-	position: absolute;
+	/*position: absolute;*/
 	top: 30px;
 	background: #ffffff;
 	width:265px;
@@ -149,12 +149,20 @@ ul li{
 }
 .Choices-banner{ 
 	width:1184px; 
-	height:399px; 
+	height:399px;
+	position: relative; 
 	float:left; 
 	margin-top:60px; 
 	overflow: hidden;
 }
-.Choices-banner ul{ 
+/*.Choicesnext{
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	position: absolute;
+	z-index: 20;
+}
+*/.Choices-banner ul{ 
 	width: 12000px;  
 	overflow: hidden;
 }

@@ -14,7 +14,7 @@
  	margin: 0 auto;
  }
  .topbar{
- 	margin-left: 50%;
+ 	margin-left: 40%;
  }
  .layui-layer-dialog .qrcode {
  	width: 300px;
@@ -30,7 +30,10 @@
  	font-size: larger;
  	font-weight: 600;
  }
- .tableSize{
+ .styleQR{
+ 	color: #4eabe8ed;
+ }
+/* .tableSize{
 	height: 100%;
 	width: 100%;
- }
+ }*/

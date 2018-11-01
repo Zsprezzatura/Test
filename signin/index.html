@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>人力资源研讨会</title>
+  <title>VIS大会签到系统</title>
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -86,7 +86,7 @@
       
   
   <div class="demoTable" id="layerDemo" style="margin-bottom: 0;">
-      <button id= "J-add" class="layui-btn" style="background-color: #455a64"  data-type="reload">添加</button>
+      <div id= "J-add" class="layui-btn" style="background-color: #455a64"  data-type="reload">添加</div>
       <span class="topbar">姓名/公司名称</span>
       <div class="layui-inline">
         <input class="layui-input" name="keyword" id="demoReload" autocomplete="off"/>
@@ -96,7 +96,7 @@
   </div>
   <table class="layui-table tableSize" id="LAY_table_user" lay-filter="user"></table>
   <script type="text/html" id="imgQR" >
-      <span lay-event="lookQR">查看二维码</span>
+      <span class="styleQR" lay-event="lookQR">查看二维码</span>
   </script>
   <!-- <script type="text/html" id="barDemo">  
     <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon" lay-event="edit"></i></button>
@@ -106,7 +106,7 @@
  -->  
   <script type="text/html" id="guest">
     {{#  if(d.type === '演讲嘉宾'){ }}
-      <span style="color: #49b7ff;">{{ d.type }}</span>
+      <span style="color: #de9a64ed;">{{ d.type }}</span>
       {{#  } else { }}
       {{ d.type }}
     {{#  } }}
